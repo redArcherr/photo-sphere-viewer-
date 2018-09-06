@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 启用webAPP全屏模式-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- 隐藏状态栏或者设置状态栏的颜色-->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- 禁止缓存访问页面-->
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta name="applicable-device" content="mobile">
+  <title>朝阳60周年</title>
+
+  <link rel="stylesheet" href="../dist/photo-sphere-viewer.css">
+
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    #photosphere {
+      width: 100%;
+      height: 100%;
+    }
+
+    .psv-button.custom-button {
+      font-size: 22px;
+      line-height: 20px;
+    }
+
+    .demo-label {
+      color: white;
+      font-size: 20px;
+      font-family: Helvetica, sans-serif;
+      text-align: center;
+      padding: 5px;
+      border: 1px solid white;
+      background: rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+<div id="photosphere"></div>
+<div id="parent_img">
+    <div id="closeImg"><img style="width: 40px;height: 40px;" src="images/close.png"></div>
+</div>
+<script src="../node_modules/jQuery.js"></script>
+<script src="../node_modules/three/three.js"></script>
+<script src="../node_modules/D.js"></script>
+<script src="../node_modules/uevent.js"></script>
+<script src="../node_modules/doT.js"></script>
+<script src="../node_modules/NoSleep.js"></script>
+<script src="../node_modules/three/CanvasRenderer.js"></script>
+<script src="../node_modules/three/Projector.js"></script>
+<script src="../node_modules/three/StereoEffect.js"></script>
+<script src="../node_modules/three/DeviceOrientationControls.js"></script>
+<script src="../dist/photo-sphere-viewer.js"></script>
+
+<script src="./js/main.js" ></script>
+
+
+</body>
+</html>
